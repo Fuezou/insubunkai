@@ -124,6 +124,7 @@ class Pattern15Generator {
         (pair[0] == b && pair[1] == d) ||      // 正答
         (pair[0] == -b && pair[1] == d) ||     // 誤答1
         (pair[0] == b && pair[1] == -d) ||     // 誤答2
+        (a * pair[1] + pair[0] * c == a * d + b * c) ||  // 展開すると正答と同じになるもの
         (pair[0] == -b && pair[1] == -d)       // 両方符号逆
       );
       
@@ -183,6 +184,7 @@ class Pattern15Generator {
         (pair[0] == b && pair[1] == d) ||      // 正答
         (pair[0] == -b && pair[1] == d) ||     // 誤答1
         (pair[0] == b && pair[1] == -d) ||     // 誤答2
+        (a * pair[1] + pair[0] * c == a * d + b * c) ||  // 展開すると正答と同じになるもの
         (pair[0] == -b && pair[1] == -d)       // 両方符号逆
       );
       
