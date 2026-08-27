@@ -209,7 +209,7 @@ class Pattern37Generator {
     // 誤答3: 因数ペアの取り違え a(cx+d'y)(cx-d''y)
     String wrong3;
     int dSquared = d * d;
-    List<List<int>> pairs = getFactorPairs(dSquared);
+    List<List<int>> pairs = getSquareFactorPairs(dSquared);
     
     // 正答のペア [d, d] を除外
     pairs.removeWhere((pair) => (pair[0] == d && pair[1] == d));
